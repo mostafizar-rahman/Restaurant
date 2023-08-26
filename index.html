@@ -12,11 +12,15 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-   <!-- Font Awesome Icons -->
-   <script
-   src="https://kit.fontawesome.com/1cbbb02fe6.js"
-   crossorigin="anonymous"
- ></script>
+    <!-- Font Awesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/1cbbb02fe6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="./assets/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/owl/owl.theme.default.min.css" />
 
     <title>Restaurant</title>
 
@@ -24,7 +28,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
+      <div class="container-xxl">
         <a class="navbar-brand" href="#">TopServe</a>
         <button
           class="navbar-toggler"
@@ -59,7 +63,7 @@
 
     <!-- ------- Banner -->
     <section class="banner">
-      <div class="container">
+      <div class="container-xxl">
         <div class="row">
           <div class="col-lg-7">
             <div>
@@ -69,16 +73,20 @@
                 Alcohol & More
               </h1>
               <div class="search_field">
-                <div class="loation_icon"></div>
                 <input type="text" placeholder="Enter Delivery Address" />
+                <div class="loation_icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
                 <div class="search_icon">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                  <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
               </div>
             </div>
-            <div class="mt-5 mb-5  app">
+            <div class="mt-5 mb-5 app">
               <h3 class="">Download Our Monile App Now</h3>
-              <div class="d-flex justify-content-center justify-content-lg-start gap-5 mt-5 mt-lg-3">
+              <div
+                class="d-flex justify-content-center justify-content-lg-start gap-5 mt-5 mt-lg-3"
+              >
                 <img src="./image/GooglePlay.png" alt="" />
                 <img src="./image/Download-on-the-AppStore.png" alt="" />
               </div>
@@ -95,8 +103,8 @@
 
     <!-- -------- About -->
 
-    <section class="about mt_16 ">
-      <div class="container">
+    <section class="about mt_16">
+      <div class="container-xxl">
         <div class="row">
           <div class="col-lg-6 order-lg-0 order-1">
             <img src="./image/new img.png" alt="" class="img-fluid" />
@@ -129,7 +137,7 @@
     <!-- ---------- order -->
 
     <section class="order mt_22">
-      <div class="container position-relative">
+      <div class="container-xxl position-relative">
         <div class="row">
           <div class="col order-md-1 order-0">
             <button class="w-100 rounded-pill custom_btn">
@@ -244,7 +252,7 @@
     <!-- -------- Software -->
 
     <section class="software mt_22" id="software">
-      <div class="container position-relative">
+      <div class="container-xxl position-relative">
         <div class="row">
           <div class="col">
             <button class="custom_btn w-100 rounded-pill">
@@ -338,7 +346,7 @@
     <!-- -------- online_order -->
 
     <section class="online_order mt_22">
-      <div class="container position-relative">
+      <div class="container-xxl position-relative">
         <div class="row">
           <div class="col">
             <button class="custom_btn w-100 rounded-pill">
@@ -389,7 +397,7 @@
     <!-- -------- delivery -->
 
     <section class="delivery mt_22">
-      <div class="container position-relative">
+      <div class="container-xxl position-relative">
         <div class="row">
           <div class="col">
             <button class="custom_btn w-100 rounded-pill">
@@ -454,7 +462,7 @@
     <!-- -------- -->
 
     <section class="mt_22">
-      <div class="container position-relative">
+      <div class="container-xxl position-relative">
         <div class="row">
           <div class="col">
             <button class="custom_btn w-100 rounded-pill">
@@ -491,7 +499,7 @@
               class="img-fluid"
             />
           </div>
-          <div class="col-lg-5 ">
+          <div class="col-lg-5">
             <h5 class="sub_title">Push Notification Promotions</h5>
             <h2 class="title">
               Capture Email Addresses <br />
@@ -516,10 +524,10 @@
 
     <!-- ------ ads -->
 
-    <section class="container mt_16">
+    <section class="container-xxl mt_16">
       <div class="ads">
         <div class="row d-flex align-items-center">
-          <div class="col-lg-6 order-lg-0 order-1 ">
+          <div class="col-lg-6 order-lg-0 order-1">
             <img src="./image/cta img.png" alt="" class="img-fluid left_side" />
           </div>
           <div class="col-lg-6">
@@ -536,20 +544,53 @@
       </div>
     </section>
 
-    <!-- -------  -->
+    <!-- ------- Partners  -->
 
-    <section>
-      <div class="container">
-        <div class="flex justify-content-between flex-wrap">
-            <div>
-                <img src="./image/" alt="">
-            </div>
+    <section class="mt_16">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col text-center">
+            <h5 class="sub_title">JOIN</h5>
+            <h2 class="title">Some Of Our Partners</h2>
+          </div>
+        </div>
+        <div class="partners owl-carousel owl-theme mt-5">
+          <div class="partner_img">
+            <a href="#">
+              <img src="./assets/icons/Ekyc.png" alt="" class="img-fluid " />
+            </a>
+          </div>
+          <div class="partner_img">
+            <a href="#">
+              <img src="./assets/icons/EkycReport.png" alt="" class="img-fluid " />
+            </a>
+          </div>
+          <div class="partner_img">
+            <a href="#">
+              <img src="./assets/icons/kycList.png" alt="" class="img-fluid " />
+            </a>
+          </div>
+          <div class="partner_img">
+            <a href="#">
+              <img src="./assets/icons/billpay.png" alt="" class="img-fluid " />
+            </a>
+          </div>
+          <div class="partner_img">
+            <a href="#">
+              <img src="./assets/icons/reportRechrage.png" alt="" class="img-fluid " />
+            </a>
+          </div>
+          <div class="partner_img">
+            <a href="#">
+              <img src="./assets/icons/report.png" alt="" class="img-fluid " />
+            </a>
+          </div>
         </div>
       </div>
     </section>
     <!-- ----- -->
     <footer class="mt_10">
-      <div class="container">
+      <div class="container-xxl">
         <div class="row">
           <div class="col-lg-5 col-md-5 col-sm-12 mt-5 mt-md-0">
             <ul class="adress">
@@ -559,7 +600,7 @@
               </li>
 
               <li>
-               <a href="">Table Ordering</a>
+                <a href="">Table Ordering</a>
               </li>
 
               <li>
@@ -572,7 +613,7 @@
             <ul class="contact">
               <span>Contact</span>
               <li>
-                Email: 
+                Email:
                 <a href="#">contact@topserve.ca</a>
               </li>
 
@@ -584,7 +625,6 @@
                 Customer Success:
                 <a href="#">support@topserve.ca</a>
               </li>
-
             </ul>
           </div>
 
@@ -592,7 +632,7 @@
             <ul class="social">
               <span>Social</span>
               <li>
-              <a href=""> Facebook</a>
+                <a href=""> Facebook</a>
               </li>
 
               <li>
@@ -611,13 +651,17 @@
         </div>
       </div>
       <div class="text-center footer_copyright">
-        <p>TopServe. All right reserved 2023.</p>
+        <p>© TopServe. All right reserved 2023.</p>
       </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/owl/owl.carousel.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

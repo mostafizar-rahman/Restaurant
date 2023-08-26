@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&family=Qwitcher+Grypen:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&family=Qwitcher+Grypen:wght@400;700&display=swap");
 html {
   font-size: 62.5%;
 }
@@ -87,9 +87,9 @@ li {
 nav {
   font-size: 1.6rem;
 }
-.navbar-brand{
-  font-size: 3.0rem;
-  font-family: 'Qwitcher Grypen', cursive;
+.navbar-brand {
+  font-size: 3rem;
+  font-family: "Qwitcher Grypen", cursive;
   font-weight: 700;
   color: var(--secondary--color) !important;
 }
@@ -106,7 +106,6 @@ nav {
 nav .nav-link {
   font-weight: 600;
   color: #000000 !important;
-
 }
 /* ------ Banner */
 .banner {
@@ -145,9 +144,10 @@ nav .nav-link {
   filter: drop-shadow(0px 15px 25px rgba(0, 0, 0, 0.15));
   background-color: #ffffff;
   outline: none;
-  padding: 0 2rem;
+  padding: 0 5rem;
   font-size: 1.6rem;
   border: none;
+  font-weight: 600;
 }
 .search_icon {
   position: absolute;
@@ -163,7 +163,13 @@ nav .nav-link {
   align-items: center;
   color: var(--primary--color);
 }
-
+.loation_icon {
+  position: absolute;
+  left: 20px;
+  top: 33%;
+  color: var(--secondary--color);
+  font-size: 2.0rem;
+}
 .app h3 {
   font-size: 3rem;
   font-weight: 600;
@@ -211,7 +217,7 @@ nav .nav-link {
   font-size: 1.7rem;
 }
 
-/* ------- */
+/* ------- Ads  */
 
 .ads {
   background-image: url("./image/cta\ bg.png");
@@ -220,8 +226,6 @@ nav .nav-link {
   background-repeat: no-repeat;
   position: relative;
   min-height: 400px;
-  /* height: 100%; */
-  /* overflow-y: hidden; */
   border-radius: 5rem;
 }
 .ads .left_side {
@@ -236,6 +240,7 @@ nav .nav-link {
   font-size: 2.5rem;
   color: var(--primary--color);
   font-weight: 500;
+  margin-top: 4rem;
 }
 .ads h2 {
   font-size: 4rem;
@@ -248,6 +253,12 @@ nav .nav-link {
   border: 2px solid var(--secondary--color);
 }
 
+/* -------- partners */
+.partners .partner_img{
+  width: 8rem;
+}
+
+/* ----------- Footer */
 footer {
   background-color: #000000;
   padding-top: 70px;
@@ -327,5 +338,8 @@ footer li {
 @media (max-width: 768px) {
   html {
     font-size: 55%;
+  }
+  .heading{
+    font-size: 5rem;
   }
 }
