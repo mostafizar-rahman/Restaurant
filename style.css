@@ -120,7 +120,9 @@ nav .nav-link {
 }
 /* ------ Banner */
 .banner {
-  padding-top: 10rem;
+  padding-top: 9rem;
+  /* position: relative; */
+  overflow: hidden;
 }
 .banner .right_side {
   background-image: url("./image/banner\ pink\ bg.png");
@@ -131,8 +133,13 @@ nav .nav-link {
   top: 0;
   right: 0;
   z-index: -1;
-  padding-top: 17rem;
-  padding-right: 7rem;
+  height: 60.5rem;
+}
+.banner .images img {
+  position: absolute;
+  right: 8rem;
+  top: 15rem;
+  max-width: 60rem;
 }
 
 .heading {
@@ -249,8 +256,6 @@ nav .nav-link {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  /* min-height: 370px;
-  height: 100%; */
   border-radius: 4rem;
   padding: 16rem 0;
 }
@@ -259,7 +264,6 @@ nav .nav-link {
   top: -4rem;
   left: 10rem;
   max-height: 42rem;
-  /* height: 100%; */
 }
 .ads .right_side {
   position: absolute;
@@ -342,8 +346,8 @@ footer li {
 
 /* ---------- Responsive */
 @media (max-width: 1018px) {
-  .ads h2{
-font-size: 3.5rem;
+  .ads h2 {
+    font-size: 3.5rem;
   }
 }
 
@@ -355,9 +359,19 @@ font-size: 3.5rem;
     width: 95%;
   }
   .banner .right_side {
+    background-position: center;
     position: relative;
-    padding: 0;
+    height: 50rem;
+    transform: rotate(90deg);
   }
+  .banner .images img {
+    position: absolute;
+    /* left: 50%; */
+    top: 0rem;
+    transform: rotate(-90deg);
+    max-width: 60rem;
+  }
+
   .point_wapper {
     position: static;
   }
@@ -384,6 +398,9 @@ font-size: 3.5rem;
   .custom_btn {
     height: 8rem;
     font-size: 3rem;
+  }
+  .banner .images img {
+    left: 10%;
   }
   .heading {
     font-size: 5rem;
@@ -414,12 +431,21 @@ font-size: 3.5rem;
     font-size: 3rem;
     line-height: 4.3rem;
   }
+  .banner .right_side {
+
+    height: 40.5rem;
+  }
+  .banner .images img {
+   max-width: 40rem;
+   top: 20%;
+ 
+  }
   .heading {
     font-size: 3.5rem;
     line-height: 5rem;
   }
   .ads h2 {
-    font-size: 3.0rem;
+    font-size: 3rem;
     line-height: 4rem;
   }
 }
