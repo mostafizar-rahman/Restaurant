@@ -125,7 +125,8 @@ nav .nav-link {
   overflow: hidden;
 }
 .banner .right_side {
-  background-image: url("./image/banner\ pink\ bg.png");
+  background-image: none;
+  background:  url("./image/banner\ pink\ bg.png");
   background-position: top right;
   background-size: contain;
   background-repeat: no-repeat;
@@ -359,16 +360,21 @@ footer li {
     width: 95%;
   }
   .banner .right_side {
+
+    background: linear-gradient(to bottom, white, transparent),  url("./image/banner\ pink\ bg.png");
+background-repeat: no-repeat;
+    background-size: contain;
     background-position: center;
     position: relative;
-    height: 50rem;
-    transform: rotate(90deg);
+    /* height: 50rem; */
+    /* transform: rotate(90deg); */
+    
   }
   .banner .images img {
     position: absolute;
     /* left: 50%; */
     top: 0rem;
-    transform: rotate(-90deg);
+    /* transform: rotate(-90deg); */
     max-width: 60rem;
   }
 
@@ -400,7 +406,9 @@ footer li {
     font-size: 3rem;
   }
   .banner .images img {
-    left: 10%;
+    left: 0%;
+    top: 20%;
+ 
   }
   .heading {
     font-size: 5rem;
@@ -436,9 +444,8 @@ footer li {
     /* height: 40.5rem; */
   }
   .banner .images img {
-   max-width: 45rem;
-   top: 20%;
- 
+   max-width: 50rem;
+  
   }
   .heading {
     font-size: 3.5rem;
@@ -457,4 +464,8 @@ footer li {
   .ads .left_side {
     top: 31.5rem !important;
   }
+  .banner .images img {
+    max-width: 45rem;
+   
+   }
 }
